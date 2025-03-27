@@ -1,6 +1,18 @@
 [package]
-name = "lc-3-vm"
+name = "lc3-vm"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+name = "lc3_vm"
+path = "src/lib.rs"
+
+[[bin]]
+name = "lc3-vm"
+path = "src/main.rs"
+
 [dependencies]
+# Dependencies
+
+[dev-dependencies]
+tempfile = "3.3.0"

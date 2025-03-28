@@ -31,7 +31,7 @@ The LC-3 VM emulates the complete LC-3 architecture including:
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/lc3-vm.git
+git clone https://github.com/EricDooo/lc3-vm.git
 cd lc3-vm
 ```
 

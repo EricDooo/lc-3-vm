@@ -3,6 +3,15 @@ name = "lc3-vm"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+# Windows-specific dependencies
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3", features = ["consoleapi", "handleapi", "minwindef", "processenv", "winbase", "wincon", "winnt", "synchapi"] }
+
+# Unix-specific dependencies
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
+
 [lib]
 name = "lc3_vm"
 path = "src/lib.rs"
@@ -10,9 +19,6 @@ path = "src/lib.rs"
 [[bin]]
 name = "lc3-vm"
 path = "src/main.rs"
-
-[dependencies]
-# Dependencies
 
 [dev-dependencies]
 tempfile = "3.3.0"

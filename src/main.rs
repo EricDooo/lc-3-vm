@@ -9,9 +9,9 @@ fn main() -> io::Result<()> {
         return Ok(());
     }
 
-    let mut vm = LC3::new();
+    let mut vm: LC3 = LC3::new();
     vm.read_image_file(&args[1])?;
-    vm.run();
+    vm.run()?;
 
     Ok(())
 }

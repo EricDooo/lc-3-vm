@@ -1,5 +1,6 @@
-mod lc3;
-pub use lc3::*;
+/// Virtual machine implementation
+pub mod vm;
+/// I/O subsystem
+pub mod io;
 
-#[cfg(test)]
-mod test;
+pub use vm::LC3;

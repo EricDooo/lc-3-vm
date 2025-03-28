@@ -15,10 +15,11 @@ The LC-3 VM emulates the complete LC-3 architecture including:
 ## Features
 
 - Complete implementation of all LC-3 instructions
-- Support for memory-mapped registers
+- Cross-platform support (Windows and Unix-like systems)
+- Memory-mapped I/O for keyboard input
 - File I/O for loading LC-3 object files
-- Terminal-based input/output
-- Simple and clean Rust implementation
+- Terminal-based input/output with raw mode support
+- Clean, modular Rust implementation
 
 ## Requirements
 
@@ -30,8 +31,8 @@ The LC-3 VM emulates the complete LC-3 architecture including:
 Clone this repository:
 
 ```bash
-git clone https://github.com/yourusername/lc3-vm-rust.git
-cd lc3-vm-rust
+git clone https://github.com/yourusername/lc3-vm.git
+cd lc3-vm
 ```
 
 Build the project:
